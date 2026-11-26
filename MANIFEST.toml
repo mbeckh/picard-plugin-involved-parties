@@ -1,0 +1,31 @@
+uuid = "bf876a8e-a54d-40d4-9974-dd201a20088d"
+name = "Additional Involved Parties Details"
+description = "Additional metadata for composers, lyricists, writers and producers."
+api = ["3.0"]
+authors = ["Michael Beckh"]
+maintainers = ["Michael Beckh"]
+license = "Apache-2.0"
+license_url = "https://www.apache.org/licenses/LICENSE-2.0"
+long_description = """Additional metadata for composers, lyricists, writers and producers.
+
+The plugin adds the following metadata variables for each track if the respective data is available:
+
+* _aipd_composer_id
+* _aipd_composer_legal
+* _aipd_lyricist_id
+* _aipd_lyricist_legal
+* _aipd_producer_id
+* _aipd_producer_legal
+* _aipd_writer_id
+* _aipd_writer_legal
+
+Please note that the plugin makes additional API calls to the MusicBrainz
+database and might therefore slow down retrieval. An internal memory cache is
+used for the lookup of legal names.
+
+"""
+categories = ["metadata"]
+homepage = "https://github.com/mbeckh/picard-plugin-involved-parties"
+report_bugs_to = "https://github.com/mbeckh/picard-plugin-involved-parties/issues"
+min_python_version = "3.12"
+source_locale = "en"
